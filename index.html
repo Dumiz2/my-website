@@ -1,90 +1,39 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Physics Application</title>
-  <link rel="stylesheet" href="physicsProjectileApp.css">
+  <title>Physics Simulator App</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+  <script src="scripts/jquery-1.8.3.min.js">
+  </script>
+  <script src="scripts/chromeFileProtocolFix.js"></script>
+  <script src="scripts/jquery.mobile-1.3.1.min.js">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <div>
-  <h1>Projectiles</h1>
-  
-  <figure>
-   <img src="projectilePic.jpeg" alt="A Cannon Firing a Projectile" width="333" height="228">
-   <figcaption><strong>Fig. 1 - A Projectile Fired from a Cannon</strong></figcaption>
-  </figure>
+  <div data-role="page">
+    <div data-role=header>Projectile app</div>
+    <div data-role="content">
+      <label for="angle">Angle:</label>
+      <input type='number' name='angle' id='angle' min='0'
+      max='90' placeholder='In degrees'>
+      <label for="velocity">Velocity:</label>
+      <input type='number' name='velocity' id='velocity'
+      min='0' max='299792458' placeholder='In metres/second'>
+      <br>
+      <button>Display</button>
+    </div>
+    <div data-role=footer>
+      <small>
 
-  <p>In 1600s, armies used equations of motions to calculate
-    velocities and angle for firing a missile to hit
-    a target. While a quarterback does not do explicit
-    calculations using equations of motion, a computerized
-    football game will certainly need to do these calculations.
-    </p>
-	
-	<video controls width="333" height="228">
-           <source src="projectileVid.mp4" type="video/mp4">
-        </video>
-	
-	<br> We will use the metric notations that are favored
-    for all scientific and engineering calculations
-    <br>
-    <br> The following abbreviations will be used:
-  </p>
-  <h2>Abbreviations</h2>
-  <ul>
-   <li>meters, <em>m</em>
-   </li>
-  <li> kilometers, <em>km</em>: 1000 meters make up a kilometer</li>
-  <li> meters per second, m/s: units for measuring distance</li>
-  <li> meters per second squared, <em>m/s
-  <sup>2</sup></em>: units for measuring acceleration
-  </li>
-  </ul>
-  <h2>Notations</h2>
-  
-  <table border="1">
-  <tr>
-   <th>abbreviation</th>
-   <th>Meaning</th>
-  </tr>
-  <tr>
-   <td><em>u</em></td>
-   <td>Initial velocity</td>
-  </tr>
-  <tr>
-   <td><em>v</em></td>
-   <td>Final velocity</td>
-  </tr>
-  <tr>
-   <td><em>a</em></td>
-   <td>Acceleration</td>
-  </tr>
-  <tr>
-   <td><em>t</em></td>
-   <td>Time</td>
-  </tr>
-  <tr>
-   <td><em>s</em></td>
-   <td>Distance</td>
-  </tr>
-  </table>
-  
-  <h2>Equations</h2>
-  <ol>
-   <li>a = (v - u) / t, which can be arranged to get the following
-  equation
-   </li>
-   <li>t = (v - u) / a, which can be further arranged as
-   </li>
-   <li>v = u + a * t
-   </li>
-   <li>s = u * t + 0.5 * a * t<sup>2</sup>, another useful
-  equation of motion
-   </li>
-  </ol>
+        Cross-platform mobile app demo
+
+      </small>
+    </div>
   </div>
-
 </body>
 
 </html>
